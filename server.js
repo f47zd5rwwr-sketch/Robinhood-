@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import path from "node:path";
+import fs from "node:fs/promises";
 import {fileURLToPath} from "node:url";
 
 dotenv.config();
@@ -15,6 +16,7 @@ async function getBrokerSnapshot(){
   return {connected:false,source:"not_configured",message:"Broker data adapter is not configured. Keep credentials server-side."};
 }
 
+app.get("/api/dashboard",async(req,res)=>{try{const raw=await fs.readFile(path.join(__dirname,"data","dashboard.json"),"utf8");res.json(JSON.parse(raw))}catch(e){res.status(503).json({error:"dashboard_snapshot_unavailable"})}});
 app.get("/api/health",(req,res)=>res.json({ok:true,time:new Date().toISOString()}));
 app.get("/api/portfolio",async(req,res)=>{try{res.json(await getBrokerSnapshot())}catch(e){res.status(502).json({error:"broker_unavailable"})}});
 app.get("/api/positions",async(req,res)=>{try{res.json(await getBrokerSnapshot())}catch(e){res.status(502).json({error:"broker_unavailable"})}});
