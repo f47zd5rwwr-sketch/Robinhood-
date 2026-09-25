@@ -1,4 +1,4 @@
-const state={lastSync:null,portfolio:{value:0,options:0,buyingPower:0},positions:[],watch:[]};
+const state={lastSync:null,portfolio:{value:0,options:0,buyingPower:0},positions:[],watch:[],watchlists:[]};
 const meta={dashboard:["Dashboard","Your trading workspace at a glance."],portfolio:["Portfolio","Positions, exposure, and account snapshot."],watchlists:["Watchlists","Organize ideas before they become trades."],premarket:["Pre-Market","Prepare the plan before the session starts."],journal:["Journal","Track the thesis, execution, and result."],rules:["Rules","Your guardrails for disciplined trading."],training:["Training","Build market and options understanding step by step."]};
 function money(v){return "$"+Number(v||0).toFixed(2)}
 function sync(){fetch("data/dashboard.json").then(r=>r.ok?r.json():Promise.reject()).then(d=>{Object.assign(state,d,{lastSync:new Date()});renderCurrent()}).catch(()=>{state.lastSync=null;renderCurrent()})}
