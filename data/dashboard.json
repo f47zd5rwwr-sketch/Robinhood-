@@ -1,0 +1,78 @@
+{
+  "syncedAt": "2026-09-25T19:59:59.991Z",
+  "account": {
+    "label": "Personal",
+    "maskedAccount": "••••8011"
+  },
+  "portfolio": {
+    "value": 2957.13162402,
+    "equity": 3189.46162402,
+    "options": 99,
+    "cash": -331.33,
+    "buyingPower": 2571.6446,
+    "unleveragedBuyingPower": 1285.8223,
+    "pendingDeposits": 0,
+    "currency": "USD"
+  },
+  "positions": [
+    {
+      "symbol": "IONQ",
+      "description": "48.50 Call · 2026-10-02",
+      "strike": 48.5,
+      "type": "call",
+      "quantity": 1,
+      "averagePrice": 81,
+      "markPrice": 0.84,
+      "pnl": -72.6,
+      "expiration": "2026-10-02",
+      "bid": 0.74,
+      "ask": 0.94,
+      "delta": 0.292932,
+      "theta": -0.121158,
+      "iv": 0.768825
+    },
+    {
+      "symbol": "IONQ",
+      "description": "53.00 Call · 2026-10-02",
+      "strike": 53,
+      "type": "call",
+      "quantity": 1,
+      "averagePrice": 26,
+      "markPrice": 0.145,
+      "pnl": -11.5,
+      "expiration": "2026-10-02",
+      "bid": 0.01,
+      "ask": 0.28,
+      "delta": 0.075094,
+      "theta": -0.047951,
+      "iv": 0.741407
+    }
+  ],
+  "watchlists": [
+    {
+      "name": "Options Watchlist",
+      "count": 0
+    },
+    {
+      "name": "My First List",
+      "count": 0
+    },
+    {
+      "name": "Cryptos to Watch",
+      "count": 4
+    },
+    {
+      "name": "Long term",
+      "count": 2
+    },
+    {
+      "name": "🔥 Pre-Market Candidates",
+      "count": 31
+    },
+    {
+      "name": "Agent",
+      "count": 2
+    }
+  ],
+  "watch": []
+}
