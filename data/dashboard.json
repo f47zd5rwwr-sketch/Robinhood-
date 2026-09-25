@@ -1,12 +1,12 @@
 {
-  "syncedAt": "2026-09-25T19:59:59.991Z",
+  "syncedAt": "2026-09-25T22:19:23.341Z",
   "account": {
     "label": "Personal",
     "maskedAccount": "••••8011"
   },
   "portfolio": {
-    "value": 2957.13162402,
-    "equity": 3189.46162402,
+    "value": 2957.06532402,
+    "equity": 3189.39532402,
     "options": 99,
     "cash": -331.33,
     "buyingPower": 2571.6446,
@@ -27,9 +27,9 @@
       "expiration": "2026-10-02",
       "bid": 0.74,
       "ask": 0.94,
-      "delta": 0.292932,
-      "theta": -0.121158,
-      "iv": 0.768825
+      "delta": 0.292931,
+      "theta": -0.121205,
+      "iv": 0.768974
     },
     {
       "symbol": "IONQ",
@@ -44,8 +44,8 @@
       "bid": 0.01,
       "ask": 0.28,
       "delta": 0.075094,
-      "theta": -0.047951,
-      "iv": 0.741407
+      "theta": -0.04797,
+      "iv": 0.741556
     }
   ],
   "watchlists": [
